@@ -1,0 +1,181 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Main styles */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Heading styles */
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Section styles */
+  section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 40px;
+  }
+  
+  /* Features list styles */
+  ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  li {
+    font-size: 16px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  li:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Trainer card styles */
+  .trainer {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .trainer img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+  }
+  
+  .trainer h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .trainer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  /* Button styles */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    main {
+      padding: 10px;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  
+    ul {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    li {
+      font-size: 14px;
+    }
+  
+    .trainer img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .trainer h3 {
+      font-size: 18px;
+    }
+  
+    .trainer p {
+      font-size: 14px;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+.action-buttons {
+    display: flex;
+}
+
+.action-buttons form {
+    margin-right: 5px;
+}
+
+.action-buttons form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-buttons form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
